@@ -24,7 +24,6 @@ npx tailwindcss -i ./src/index.css -o ./public/index.css --watch
     -   Grind spot objects now include "icon" and "price"
 
 -   14/06/2022
-
     -   Dev Log Starts Here (Gotta start somewhere)
     -   Created the basic layout and functionality for Grind Calculator
     -   Use JS to add <img> and <input> instead of spamming HTML
