@@ -1,0 +1,48 @@
+try{
+	if ( typeof $ !== "undefined" ){
+$(document).ready(function() {
+	try {
+		if ( typeof scbAnalytics != "undefined" ) {
+			scbAnalytics.init();
+
+			$('a').click(function(e){ 
+				scbAnalytics.insertClickLoadTrk(this);
+			});
+			
+			$('#lily_banner_container').click(function(e){ 
+				var banner = $('#lily_banner_container').find('img')[0];
+				if (banner) {
+					scbAnalytics.insertClickLoadTrk(banner);
+				}
+			});
+						
+			$('#lily_banner_container').mouseover(function(e) {
+				var banner = $('#lily_banner_container').find('img')[0];
+				if (banner) {
+					scbAnalytics.insertMouseMoveOnImg(banner);
+				}
+			});
+			
+			$('#post-login-pbanner-landing').click(function(e){ 
+				var banner = $('#post-login-pbanner-landing').find('img')[0];
+				if (banner) {
+					scbAnalytics.insertClickLoadTrk(banner);
+				}
+			});
+						
+			$('#post-login-pbanner-landing').mouseover(function(e) {
+				var banner = $('#post-login-pbanner-landing').find('img')[0];
+				if (banner) {
+					scbAnalytics.insertMouseMoveOnImg(banner);
+				}
+			});
+			
+			
+		}
+	}
+	catch (e) {
+				//console.log("Error in scbAnalytics : " + e.message);
+				//console.log("Stack of the error : " + e.stack);
+	}
+});	}
+}catch(e){}

@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.grind_input {
+    @apply text-center font-bold w-[70px] px-[5px] py-[2px];
+}
+
+.output {
+    @apply border w-[72px] h-[30px] text-center font-bold text-white;
+}
+
+.item_icons {
+    @apply m-auto pb-2;
+}
+
+.table_header_text {
+    @apply w-[72px] h-[30px] text-center font-bold text-white;
+}

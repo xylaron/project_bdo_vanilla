@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/public/index.css" rel="stylesheet" />
+    <title>Grind Calc LUL</title>
+</head>
+
+<body class="bg-neutral-800 m-10" onload="loadTable(sycraia)">
+    <div class="grid grid-cols-3 gap">
+        <div class="text-white text-3xl font-bold underline mb-5 col-span-3">Scuffed Grinding Calculator</div>
+        <div class="col-span-3">
+            <button class="bg-white px-5 py-1 mb-5 rounded-xl font-bold hover:bg-neutral-200" type="button"
+                onclick="logItemCount()">Submit</button>
+        </div>
+        <div class="col-span-2">
+            <table class id="outputTable">
+            </table>
+        </div>
+        <div>
+            <ul class="text-white font-normal text-2xl mb-5 list-none">Average Silver/Hour
+                <li class="text-white text-5xl font-bold" id="silver_output">0</li>
+            </ul>
+            <select class="rounded-xl px-3 py-1 mb-5 font-bold" id="grindSpotSelect" onchange="changeGrindSpot(event)">
+                <option value="sycraia">Sycraia Underwater</option>
+                <option value="orccamp">Orc Camp</option>
+            </select>
+        </div>
+    </div>
+
+
+    <script src="/database.js"></script>
+    <script src="/index.js"></script>
+</body>
+
+</html>
