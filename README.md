@@ -20,7 +20,7 @@ npx tailwindcss -i ./src/index.css -o ./public/index.css --watch
 -   Added formatting for numbers in Average silver/hr using "int.toLocaleString()"
 -   Basic functionality of the grind spot selector was added using switch statements and <select>
 -   Remove icons.js, items.js and combined all the data in database.js
--   Grind spot objects now include "icon" and "price"
+-   Grind spot objects now include "icon" and "price".
 
 ##   14/06/2022
 -   Dev Log Starts Here (Gotta start somewhere)
