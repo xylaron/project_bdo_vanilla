@@ -14,7 +14,7 @@ npx tailwindcss -i ./src/index.css -o ./public/index.css --watch
 
 # Dev Log:
 
--   15/06/2022
+##   15/06/2022
 -   Added the calculation of overall silver/hr from data on table
 -   All numbers output are now rounded to whole numbers using "Math.round()"
 -   Added formatting for numbers in Average silver/hr using "int.toLocaleString()"
@@ -22,7 +22,7 @@ npx tailwindcss -i ./src/index.css -o ./public/index.css --watch
 -   Remove icons.js, items.js and combined all the data in database.js
 -   Grind spot objects now include "icon" and "price"
 
--   14/06/2022
+##   14/06/2022
 -   Dev Log Starts Here (Gotta start somewhere)
 -   Created the basic layout and functionality for Grind Calculator
 -   Use JS to add <img> and <input> instead of spamming HTML
