@@ -1,8 +1,10 @@
 # To do list:
 
+-   Store data locally as objects (until db is implemented)
 -   Format the silver/hr in the table (Displays 100k instead of 100000)
 -   Manage the tailwind grid/col to make website layout better
 -   Style the tables to look better
+
 
 # Reference Links:
 
