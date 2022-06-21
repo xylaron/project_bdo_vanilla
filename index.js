@@ -18,6 +18,7 @@ resetTable = () => {
     let table = document.getElementById("outputTable");
     table.innerHTML = "";
     currentAvgSilverHr = 0;
+    hour_count = 1;
     document.getElementById("silver_output").innerHTML = 0;
 };
 
@@ -127,7 +128,7 @@ inputToTable = (array = [], output) => {
 
     //adds silver/hr total into table
     let last = row.insertCell(array.length);
-    last.innerHTML = Math.round(output);
+    last.innerHTML = formatNumber(output);
     last.className = "output";
 };
 
@@ -144,4 +145,30 @@ overallAvg = (int) => {
 
     document.getElementById("silver_output").innerHTML =
         currentAvgSilverHr.toLocaleString();
+};
+
+formatNumber = (int) => {
+    let count = 0;
+    let check = int;
+    let string;
+
+    while (check > 1) {
+        check /= 10;
+        count++;
+    }
+
+    console.log(count);
+
+    if (count >= 10) {
+        string = (int / 1000000000).toFixed(2).toString() + "b";
+        return string;
+    } else if (count >= 7) {
+        string = (int / 1000000).toFixed(1).toString() + "m";
+        return string;
+    } else if (count >= 4) {
+        string = (int / 1000).toFixed(0).toString() + "k";
+        return string;
+    } else {
+        string = int.toString;
+    }
 };
