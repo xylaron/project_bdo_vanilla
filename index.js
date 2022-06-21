@@ -147,6 +147,7 @@ overallAvg = (int) => {
         currentAvgSilverHr.toLocaleString();
 };
 
+//formats numbers and adds suffix "b", "m" or "k"
 formatNumber = (int) => {
     let count = 0;
     let check = int;
@@ -156,8 +157,6 @@ formatNumber = (int) => {
         check /= 10;
         count++;
     }
-
-    console.log(count);
 
     if (count >= 10) {
         string = (int / 1000000000).toFixed(2).toString() + "b";

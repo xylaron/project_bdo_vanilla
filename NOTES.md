@@ -1,7 +1,6 @@
 # To do list:
 
 -   Store data locally as objects (until db is implemented)
--   Format the silver/hr in the table (Displays 100k instead of 100000)
 -   Manage the tailwind grid/col to make website layout better
 -   Style the tables to look better
 
@@ -14,6 +13,10 @@
 npx tailwindcss -i ./src/index.css -o ./public/index.css --watch
 
 # Dev Log:
+
+-   21/06/2022
+
+    -   Total silver/hr in the table is now formatted with suffixes (e.g 1,000,000 -> 1.0m)
 
 -   15/06/2022
 
