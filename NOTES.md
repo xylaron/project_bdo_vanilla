@@ -15,10 +15,6 @@ npx tailwindcss -i ./src/index.css -o ./public/index.css --watch
 
 # Dev Log:
 
--   21/06/2022
-
-    -   Added new count to database.js to save user inputs locally
-
 -   15/06/2022
 
     -   Added the calculation of overall silver/hr from data on table

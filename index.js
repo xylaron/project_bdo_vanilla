@@ -80,9 +80,11 @@ logItemCount = () => {
         inputItem[i] = document.getElementById("inputItem" + (i + 1)).value;
     }
 
-    let total = addItemValue(inputStringToInt(inputItem));
+    let inputItemInt = inputStringToInt(inputItem);
+    let total = addItemValue(inputItemInt);
 
     inputToTable(inputItem, total);
+    inputToDatabase(inputItemInt, total);
     overallAvg(total);
 
     for (let i = 0; i < grindSpotCurrent.length; i++) {
@@ -100,7 +102,7 @@ inputStringToInt = (stringArray = []) => {
 };
 
 //calculates total silver/hr from user input
-addItemValue = (array) => {
+addItemValue = (array = []) => {
     let total = 0;
 
     for (let i = 0; i < array.length; i++) {
@@ -127,6 +129,11 @@ inputToTable = (array = [], output) => {
     let last = row.insertCell(array.length);
     last.innerHTML = Math.round(output);
     last.className = "output";
+};
+
+//adds the data to a temp database
+inputToDatabase = (array = [], int) => {
+    array[array.length] = int;
 };
 
 //finds average of all silver/hr data in table
