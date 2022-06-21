@@ -151,7 +151,6 @@ overallAvg = (int) => {
 formatNumber = (int) => {
     let count = 0;
     let check = int;
-    let string;
 
     while (check > 1) {
         check /= 10;
@@ -159,15 +158,12 @@ formatNumber = (int) => {
     }
 
     if (count >= 10) {
-        string = (int / 1000000000).toFixed(2).toString() + "b";
-        return string;
+        return (int / 1000000000).toFixed(2).toString() + "b";
     } else if (count >= 7) {
-        string = (int / 1000000).toFixed(1).toString() + "m";
-        return string;
+        return (int / 1000000).toFixed(1).toString() + "m";
     } else if (count >= 4) {
-        string = (int / 1000).toFixed(0).toString() + "k";
-        return string;
+        return (int / 1000).toFixed(0).toString() + "k";
     } else {
-        string = int.toString;
+        return int.toString();
     }
 };
