@@ -5,7 +5,6 @@
 -   Manage the tailwind grid/col to make website layout better
 -   Style the tables to look better
 
-
 # Reference Links:
 
 -   https://garmoth.com/grind-tracker/UXikqPEmFP/spot/1
