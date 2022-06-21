@@ -25,7 +25,6 @@ resetTable = () => {
 //runs functions that load table elements
 loadTable = (grindSpot) => {
     grindSpotCurrent = grindSpot;
-    console.log(grindSpot);
     loadIcons();
     loadInputBoxes();
 };
