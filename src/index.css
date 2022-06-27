@@ -7,7 +7,7 @@
 }
 
 .output {
-    @apply border w-[72px] h-[30px] text-center font-bold text-white;
+    @apply border w-[72px] h-[30px] text-center font-bold text-white ;
 }
 
 .item_icons {

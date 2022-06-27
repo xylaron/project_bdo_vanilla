@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="bg-neutral-800">
 
 <head>
     <meta charset="UTF-8" />
@@ -7,20 +7,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="/public/index.css" rel="stylesheet" />
     <title>Grind Calc LUL</title>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/daisyui@2.17.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script> -->
 </head>
 
-<body class="bg-neutral-800 m-10" onload="loadTable(sycraia)">
+<body class="m-10" onload="loadTable(sycraia)">
     <div class="grid grid-cols-4 gap-x-20">
         <div class="text-white text-3xl font-bold underline mb-5 col-span-3 px-5">Scuffed Grinding Calculator</div>
         <div class="px-5 col-span-3">
-            <button class="bg-white px-5 py-1 mb-5 rounded-full font-bold hover:bg-neutral-200" type="button"
+            <button class=" bg-white text-black px-5 py-1 mb-5 rounded-xl font-bold hover:bg-neutral-200" type="button"
                 onclick="logItemCount()">Submit</button>
         </div>
-        <div class="col-span-3 p-5 rounded-xl bg-neutral-700">
-            <table class="" id="outputTable">
+        <div class="h-screen col-span-3 p-5 rounded-xl bg-neutral-700 drop-shadow-xl">
+            <table class="table table-compact" id="outputTable">
             </table>
         </div>
-        <div class="p-5 rounded-xl bg-neutral-700">
+        <div class="h-fit p-5 rounded-xl bg-neutral-700 drop-shadow-xl">
             <ul class="text-white font-normal text-2xl mb-5 list-none">Average Silver/Hour
                 <li class="text-white text-5xl font-bold" id="silver_output">0</li>
             </ul>
@@ -33,6 +35,7 @@
 
     <script src="/database.js"></script>
     <script src="/index.js"></script>
+    
 </body>
 
 </html>
